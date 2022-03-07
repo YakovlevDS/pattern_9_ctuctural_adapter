@@ -21,3 +21,22 @@ class Auto {
 		engine.simpleInterface()
 	}
 }
+// case1
+// const myCar = new Auto();
+// const oldEngine= new Engine2()
+// myCar.startEngine(oldEngine)
+
+// case2
+
+const myCar = new Auto();
+const engineAdapter = new EngineV8Adapter(new EngineV8())
+
+myCar.startEngine(engineAdapter)
+
+// case3
+
+// const myCar = new Auto();
+// const engineAdapter = new EngineV8()
+// myCar.startEngine(engineAdapter)
+
+// ERROR
